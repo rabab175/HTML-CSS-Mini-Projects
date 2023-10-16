@@ -1,0 +1,115 @@
+img{
+    width: 300px;
+    height: 260px;
+    margin-bottom: 25px;
+
+}
+
+
+body{
+    background-color: #60a9ff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+
+.pannel{
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing-plan{
+    border-bottom: 2px solid #e1f1ff;
+    width: 300px;
+    height: 550px;
+}
+
+.pricing-plan:last-child{
+    border-bottom: none;
+}
+
+h1{
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+ul{
+    /*margin: 50px 0 25px;*/
+    color: #016ff9;
+    list-style-type: none;
+}
+
+.pricing-feature-items{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 5px 0;
+    border-top: 1px solid #e1f1ff;
+}
+
+.pricing-feature-items:last-child{
+   border-bottom: 1px solid #e1f1ff;
+}
+
+span{
+    color: #016ff9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700px;
+}
+
+a{
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    border-color: #348efe;
+    display: inline-block;
+    padding: 5px 35px;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+    margin: 25px 0;
+}
+
+a:hover, a:focus{
+    background-color: #e1f1ff;
+}
+
+a.is-featured{
+    background-color: #48aaff;
+    color: white;
+}
+
+a.is-featured:hover, a.is-featured:focus{
+    background-color: #269aff;
+    color: white;
+}
+
+@media(min-width:900px){
+    .pannel{
+        flex-direction: row;
+    }
+    .pricing-plan{
+        border-right: 2px solid #e1f1ff;
+        border-bottom: none;
+        padding-right: 15px;
+    }
+    .pricing-plan:last-child{
+        border-right: none;
+    }
+}
